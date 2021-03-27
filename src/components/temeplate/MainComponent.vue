@@ -1,5 +1,11 @@
 <template>
-    <div class="main">
+    <div class="main wrapper block">
+      <section class="content">
+asdasdasdasdad
+<!--         <component-->
+<!--            is="MyContacts"-->
+<!--         />-->
+      </section>
     </div>
 </template>
 
@@ -8,3 +14,8 @@
         name: "MainComponent"
     }
 </script>
+
+<style lang="scss">
+    @import "../../assets/scss/main/main";
+</style>
+

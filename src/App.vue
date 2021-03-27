@@ -1,8 +1,10 @@
 <template>
     <div id="app">
         <header-component/>
-        <sidebar-component/>
-        <main-component/>
+        <div class="main-wrap">
+            <main-component/>
+            <sidebar-component/>
+        </div>
         <footer-component/>
     </div>
 </template>
@@ -25,5 +27,21 @@
 </script>
 
 <style lang="scss">
-    @import '../src/assets/scss/main.scss';
+
+    #app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        * {
+            font-family: $font;
+        }
+    }
+
+    .main-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
 </style>

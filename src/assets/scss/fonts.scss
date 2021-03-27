@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'TTNorms';
+    src: url('~@/assets/scss/fonts/TTNorms-Light.eot');
+    src: url('~@/assets/scss/fonts/TTNorms-Light.woff') format('woff'),
+    url('~@/assets/scss/fonts/TTNorms-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('~@/assets/scss/fonts/TTNorms-Regular.eot');
+    src: url('~@/assets/scss/fonts/TTNorms-Regular.woff') format('woff'),
+    url('~@/assets/scss/fonts/TTNorms-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('~@/assets/scss/fonts/TTNorms-Medium.eot');
+    src: url('~@/assets/scss/fonts/TTNorms-Medium.woff') format('woff'),
+    url('~@/assets/scss/fonts/TTNorms-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTNorms';
+    src: url('~@/assets/scss/fonts/TTNorms-Bold.eot');
+    src: url('~@/assets/scss/fonts/TTNorms-Bold.woff') format('woff'),
+    url('~@/assets/scss/fonts/TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

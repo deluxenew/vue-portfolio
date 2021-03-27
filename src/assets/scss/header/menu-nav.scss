@@ -1,0 +1,118 @@
+#nav {
+   position: relative;
+   z-index: 2;
+
+   ul {
+      top: 1em;
+      position: relative;
+      transform: rotate(-70deg) skew(20deg, 5deg);
+      right: 150px;
+      height: 60px;
+      list-style: none;
+   }
+
+   .list-item {
+      background: $primary;
+      margin-top: 5px;
+      color: $default;
+      text-align: center;
+      height: 2.5em;
+      width: 4em;
+      vertical-align: middle;
+      line-height: 2.5em;
+      border-bottom: 1px solid $main-color-light;
+      border-radius: 0 $button-radius 0 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      box-shadow: -1.5em 1.5em 10px $main-color-light;
+      transition: all .25s ease-in;
+
+      &:hover {
+         background: $secondary;
+         transform: translate(.9em, -.9em);
+         transition: all .25s ease-in;
+         box-shadow: -2em 2em 15px $main-color-dark;
+
+         &:before,
+         &:after {
+            transition: $trs;
+         }
+
+         &:before {
+            background: $secondary-light;
+            width: 1em;
+            top: .5em;
+            left: -1em;
+         }
+
+         &:after {
+            background: $secondary-dark;
+            width: 1em;
+            bottom: -2.5em;
+            left: 1em;
+            height: 4em;
+         }
+
+         .menu-icon {
+            padding-top: 0;
+
+            svg {
+               width: 20px;
+               height: 20px;
+            }
+         }
+
+         .title {
+            opacity: 1;
+         }
+      }
+
+      &:before,
+      &:after {
+         content: '';
+         position: absolute;
+         transition: all .25s ease-in;
+         width: .5em;
+      }
+
+      &:after {
+         height: 4em;
+         background: $primary-dark;
+         bottom: -2.25em;
+         left: 1.5em;
+         transform: rotate(90deg) skew(0, 45deg);
+      }
+
+      &:before {
+         height: 2.5em;
+         background: $primary-light;
+         top: .25em;
+         left: -.5em;
+         transform: skewY(-45deg);
+      }
+
+      .menu-icon {
+         padding-top: 2px;
+         transition: $trs;
+
+         svg {
+            width: 35px;
+            height: 35px;
+            transition: $trs;
+         }
+      }
+
+      .title {
+         color: $white;
+         opacity: 0;
+         transition: $trs;
+         height: 10px;
+         position: absolute;
+         width: 100%;
+         top: 10px;
+         font-size: 13px;
+      }
+   }
+}
