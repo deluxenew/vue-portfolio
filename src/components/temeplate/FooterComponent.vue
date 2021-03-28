@@ -1,10 +1,6 @@
 <template>
     <div class="footer block row">
-        <div class="button">Кнопка</div>
-        <div class="button green">Кнопка</div>
-        <div class="button gray">Кнопка</div>
-        <div class="button primary">Кнопка</div>
-        <div class="button main">Кнопка</div>
+       <div>Ссылка на этот проект <a href="https://github.com/deluxenew/vue-portfolio" target="_blank" class="link">https://github.com/deluxenew/vue-portfolio</a></div>
     </div>
 </template>
 
