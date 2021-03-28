@@ -1,39 +1,43 @@
 #nav {
    position: relative;
    z-index: 2;
+   display: flex;
+   flex-basis: 300px;
 
    ul {
       top: 1em;
       position: relative;
       transform: rotate(-70deg) skew(20deg, 5deg);
-      right: 150px;
       height: 60px;
       list-style: none;
+      display: flex;
+      flex-direction: column;
    }
 
    .list-item {
       background: $primary;
       margin-top: 5px;
-      color: $default;
       text-align: center;
-      height: 2.5em;
+      height: 3em;
       width: 4em;
       vertical-align: middle;
-      line-height: 2.5em;
+      line-height: 1;
       border-bottom: 1px solid $main-color-light;
       border-radius: 0 $button-radius 0 0;
       position: relative;
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
       text-decoration: none;
-      box-shadow: -1.5em 1.5em 10px $main-color-light;
-      transition: all .25s ease-in;
+      box-shadow: -1.5em 1em 10px $main-color-light;
+      transition: all .3s ease-in;
 
       &:hover {
          background: $secondary;
          transform: translate(.9em, -.9em);
          transition: all .25s ease-in;
-         box-shadow: -2em 2em 15px $main-color-dark;
+         box-shadow: -2em 1.5em 15px $main-color-dark;
 
          &:before,
          &:after {
@@ -59,13 +63,13 @@
             padding-top: 0;
 
             svg {
-               width: 20px;
-               height: 20px;
+               width: 15px;
+               height: 15px;
             }
          }
 
          .title {
-            opacity: 1;
+            visibility: visible;
          }
       }
 
@@ -86,7 +90,7 @@
       }
 
       &:before {
-         height: 2.5em;
+         height: 3em;
          background: $primary-light;
          top: .25em;
          left: -.5em;
@@ -98,21 +102,43 @@
          transition: $trs;
 
          svg {
-            width: 35px;
-            height: 35px;
+            width: 40px;
+            height: 40px;
             transition: $trs;
          }
       }
 
       .title {
          color: $white;
-         opacity: 0;
+         visibility: hidden;
          transition: $trs;
-         height: 10px;
          position: absolute;
          width: 100%;
-         top: 10px;
-         font-size: 13px;
+         font-size: 12px;
+         bottom: 3px;
+         font-weight: bold;
+      }
+   }
+   &.user-menu {
+      .list-item {
+         .menu-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+               height: 40px;
+               path {
+                  &:first-child {
+                     fill: $gray-light;
+                  }
+
+                  &:last-child {
+                     fill: $gray-dark;
+                  }
+               }
+            }
+         }
       }
    }
 }

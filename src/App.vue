@@ -1,10 +1,12 @@
 <template>
     <div id="app">
         <header-component/>
+
         <div class="main-wrap">
             <main-component/>
             <sidebar-component/>
         </div>
+
         <footer-component/>
     </div>
 </template>

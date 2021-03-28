@@ -27,3 +27,33 @@ export const MENU_NAV = {
       }
    ]
 }
+
+export const USER_MENU = {
+   settings: {},
+   items: [
+      {
+         svg: `
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-code fa-w-20 fa-3x"><g class="fa-group"><path fill="currentColor" d="M422.12 18.16a12 12 0 0 1 8.2 14.9l-136.5 470.2a12 12 0 0 1-14.89 8.2l-61-17.7a12 12 0 0 1-8.2-14.9l136.5-470.2a12 12 0 0 1 14.89-8.2z" class="fa-secondary"></path><path fill="currentColor" d="M636.23 247.26l-144.11-135.2a12.11 12.11 0 0 0-17 .5L431.62 159a12 12 0 0 0 .81 17.2L523 256l-90.59 79.7a11.92 11.92 0 0 0-.81 17.2l43.5 46.4a12 12 0 0 0 17 .6l144.11-135.1a11.94 11.94 0 0 0 .02-17.54zm-427.8-88.2l-43.5-46.4a12 12 0 0 0-17-.5l-144.11 135a11.94 11.94 0 0 0 0 17.5l144.11 135.1a11.92 11.92 0 0 0 17-.5l43.5-46.4a12 12 0 0 0-.81-17.2L117 256l90.6-79.7a11.92 11.92 0 0 0 .83-17.24z" class="fa-primary"></path></g></svg>
+         `,
+         title: 'Проекты',
+         url: '/projects',
+         color: '',
+      },
+      {
+         svg: `
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="address-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-address-card fa-w-18 fa-3x"><g class="fa-group"><path fill="currentColor" d="M528 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h480a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-352 96a64 64 0 1 1-64 64 64.06 64.06 0 0 1 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5a103 103 0 0 0 79.6 0h5c37.1 0 67.2 25.8 67.2 57.6zM512 312a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8zm0-64a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8zm0-64a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8z" class="fa-secondary"></path><path fill="currentColor" d="M176 256a64 64 0 1 0-64-64 64.06 64.06 0 0 0 64 64zm44.8 32h-5a103 103 0 0 1-79.6 0h-5C94.1 288 64 313.8 64 345.6v19.2c0 10.6 10 19.2 22.4 19.2h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6z" class="fa-primary"></path></g></svg>
+         `,
+         title: 'О себе',
+         url: '/about',
+         color: 'green',
+      },
+      {
+         svg: `
+            <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="mobile-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-mobile-alt fa-w-10 fa-3x"><g class="fa-group"><path fill="currentColor" d="M272 0H48A48 48 0 0 0 0 48v416a48 48 0 0 0 48 48h224a48 48 0 0 0 48-48V48a48 48 0 0 0-48-48zM160 480a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm112-108a12 12 0 0 1-12 12H60a12 12 0 0 1-12-12V60a12 12 0 0 1 12-12h200a12 12 0 0 1 12 12z" class="fa-secondary"></path><path fill="currentColor" d="M272 372a12 12 0 0 1-12 12H60a12 12 0 0 1-12-12V60a12 12 0 0 1 12-12h200a12 12 0 0 1 12 12z" class="fa-primary"></path></g></svg>
+         `,
+         title: 'Контакты',
+         url: '/contacts',
+         color: 'yellow',
+      }
+   ]
+}

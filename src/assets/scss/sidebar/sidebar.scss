@@ -1,8 +1,30 @@
 .sidebar {
+   position: relative;
    background-color: $main-color;
    transition: $trs;
    padding: 10px;
    border-radius: 0 0 0 80%;
+
+   &:before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-color: $main-color;
+   }
+
+   &:after {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 0 10px 0 0 ;
+      background-color: $white;
+   }
 
    .icon {
       cursor: pointer;

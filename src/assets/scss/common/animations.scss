@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import '~@/assets/scss/common/variables';
+@import '~@/assets/scss/common/mixins';
 
 .fade-enter-active {
     animation: .3s fade;

@@ -1,10 +1,7 @@
 <template>
     <div class="main wrapper block">
       <section class="content">
-asdasdasdasdad
-<!--         <component-->
-<!--            is="MyContacts"-->
-<!--         />-->
+         <router-view />
       </section>
     </div>
 </template>
